@@ -131,6 +131,10 @@ brew install ripgrep
 
 - [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) - This plugin adds indentation guides to all lines.
 
+#### Neosolarized Theme
+
+-[svrana/neosolarized.nvim](https://github.com/svrana/neosolarized.nvim) - Neosolarized theme for Neovim
+
 # License
 
 MIT

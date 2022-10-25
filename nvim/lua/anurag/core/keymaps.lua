@@ -19,6 +19,9 @@ keymap.set("n", "x", '"_x')
 -- delete word backwards without copying into register
 keymap.set("n", "dw", '"_dw')
 
+-- delete selection in visual mode without copying into register
+keymap.set("v", "d", '"_d')
+
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>") -- increment
 keymap.set("n", "<leader>-", "<C-x>") -- decrement

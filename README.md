@@ -130,3 +130,7 @@ brew install ripgrep
 #### Indent Highlight
 
 - [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) - This plugin adds indentation guides to all lines.
+
+# License
+
+MIT

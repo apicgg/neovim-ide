@@ -133,7 +133,7 @@ brew install ripgrep
 
 #### Neosolarized Theme
 
--[svrana/neosolarized.nvim](https://github.com/svrana/neosolarized.nvim) - Neosolarized theme for Neovim
+- [svrana/neosolarized.nvim](https://github.com/svrana/neosolarized.nvim) - Neosolarized theme for Neovim
 
 # License
 

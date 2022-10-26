@@ -33,14 +33,12 @@ return packer.startup(function(use)
 
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
-	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
+	-- use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
 
-	--[[
 	use({
 		"svrana/neosolarized.nvim",
 		requires = { "tjdevries/colorbuddy.nvim" },
 	})
-  --]]
 
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
@@ -65,6 +63,7 @@ return packer.startup(function(use)
 	-- fuzzy finding w/ telescope
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
+	use("nvim-telescope/telescope-file-browser.nvim")
 
 	-- autocompletion
 	use("hrsh7th/nvim-cmp") -- completion plugin
@@ -94,6 +93,7 @@ return packer.startup(function(use)
 	-- treesitter configuration
 	use({
 		"nvim-treesitter/nvim-treesitter",
+		commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
 		run = function()
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
@@ -117,6 +117,9 @@ return packer.startup(function(use)
 
 	-- integrated terminal
 	use({ "akinsho/toggleterm.nvim" })
+
+	-- bufferline
+	use("akinsho/nvim-bufferline.lua")
 
 	if packer_bootstrap then
 		require("packer").sync()

@@ -15,9 +15,11 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
+keymap.set("v", "x", '"_x')
 
 -- delete word backwards without copying into register
-keymap.set("n", "dw", '"_dw')
+-- keymap.set("n", "dw", '"_dw')
+keymap.set("n", "dw", 'vb"_d')
 
 -- delete selection in visual mode without copying into register
 keymap.set("v", "d", '"_d')
@@ -35,7 +37,7 @@ keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
 keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
-keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
+keymap.set("n", "<leader><Tab>", ":tabp<CR>") --  go to previous tab
 
 ----------------------
 -- Plugin Keybinds

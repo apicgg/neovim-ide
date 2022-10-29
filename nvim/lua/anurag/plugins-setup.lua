@@ -93,7 +93,6 @@ return packer.startup(function(use)
 	-- treesitter configuration
 	use({
 		"nvim-treesitter/nvim-treesitter",
-		commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
 		run = function()
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
@@ -113,7 +112,7 @@ return packer.startup(function(use)
 	use({ "iamcco/markdown-preview.nvim" })
 
 	-- indent blankline
-	use({ "lukas-reineke/indent-blankline.nvim" })
+	-- use({ "lukas-reineke/indent-blankline.nvim" })
 
 	-- integrated terminal
 	use({ "akinsho/toggleterm.nvim" })

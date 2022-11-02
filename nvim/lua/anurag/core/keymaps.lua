@@ -21,6 +21,9 @@ keymap.set("v", "x", '"_x')
 -- keymap.set("n", "dw", '"_dw')
 keymap.set("n", "dw", 'vb"_d')
 
+-- delete line without copying into register
+-- keymap.set("n", "dd", '"_dd')
+
 -- delete selection in visual mode without copying into register
 keymap.set("v", "d", '"_d')
 

@@ -50,6 +50,7 @@ return packer.startup(function(use)
 
 	-- commenting with gc
 	use("numToStr/Comment.nvim")
+	use("JoosepAlviste/nvim-ts-context-commentstring")
 
 	-- file explorer
 	use("nvim-tree/nvim-tree.lua")
@@ -106,7 +107,8 @@ return packer.startup(function(use)
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
 	-- colorizer
-	use("norcalli/nvim-colorizer.lua")
+	-- use("norcalli/nvim-colorizer.lua")
+	use("NvChad/nvim-colorizer.lua")
 
 	-- markdown preview
 	use({ "iamcco/markdown-preview.nvim" })
@@ -119,6 +121,9 @@ return packer.startup(function(use)
 
 	-- bufferline
 	use("akinsho/nvim-bufferline.lua")
+
+	-- vim fugative for git
+	use({ "tpope/vim-fugitive" })
 
 	if packer_bootstrap then
 		require("packer").sync()

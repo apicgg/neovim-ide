@@ -105,3 +105,6 @@ lspconfig["sumneko_lua"].setup({
 
 -- clangd lsp
 require("lspconfig").clangd.setup({})
+
+-- docker lsp
+require("lspconfig").dockerls.setup({})

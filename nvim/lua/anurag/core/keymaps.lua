@@ -25,7 +25,7 @@ keymap.set("n", "dw", 'vb"_d')
 -- keymap.set("n", "dd", '"_dd')
 
 -- delete selection in visual mode without copying into register
-keymap.set("v", "d", '"_d')
+-- keymap.set("v", "d", '"_d')
 
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>") -- increment

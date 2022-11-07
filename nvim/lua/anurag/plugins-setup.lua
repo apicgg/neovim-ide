@@ -124,7 +124,7 @@ return packer.startup(function(use)
 	use("akinsho/nvim-bufferline.lua")
 
 	-- vim fugative for git
-	use({ "tpope/vim-fugitive" })
+	-- use({ "tpope/vim-fugitive" })
 
 	if packer_bootstrap then
 		require("packer").sync()

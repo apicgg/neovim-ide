@@ -24,9 +24,9 @@ local cInfo = groups.Information.fg
 local cWarn = groups.Warning.fg
 local cHint = groups.Hint.fg
 
-Group.new("@tag", colors.green)
-Group.new("@tag.attribute", colors.blue)
-Group.new("@tag.delimiter", colors.red)
+-- Group.new("@tag", colors.green)
+-- Group.new("@tag.attribute", colors.blue)
+-- Group.new("@tag.delimiter", colors.red)
 Group.new("DiagnosticVirtualTextError", cError, cError:dark():dark():dark():dark(), styles.NONE)
 Group.new("DiagnosticVirtualTextInfo", cInfo, cInfo:dark():dark():dark(), styles.NONE)
 Group.new("DiagnosticVirtualTextWarn", cWarn, cWarn:dark():dark():dark(), styles.NONE)

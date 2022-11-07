@@ -1,6 +1,6 @@
 # My Neovim Setup
 
-**IMPORTANT:** These are primarily meant for inspiration. I wouldn't just blindly use them. Proceed at your own risk!
+**IMPORTANT:** Don’t blindly use my settings unless you know what that entails. Proceed at your own risk!
 
 This repo is a fork of [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files) with some extra neovim plugins that I use.
 
@@ -12,7 +12,7 @@ Check out 📹 Youtube video by [Josean Martinez](https://www.youtube.com/channe
 
 - True Color Terminal Like: [iTerm2](https://iterm2.com/)
 - [Neovim](https://neovim.io/) (Version 0.8 or Later)
-- [Nerd Font](https://www.nerdfonts.com/) - I use Hack Nerd Font
+- [Nerd Font](https://github.com/ryanoasis/nerd-fonts) - I use Hack Nerd Font. Recently I have been using JetBrainsMono Nerd Font.
 - [Ripgrep](https://github.com/BurntSushi/ripgrep) - For Telescope Fuzzy Finder
 
 If you're on mac, like me, you can install iTerm2, Neovim and Ripgrep with homebrew.
@@ -47,6 +47,7 @@ brew install ripgrep
 #### Preferred Colorscheme
 
 - [bluz71/vim-nightfly-guicolors](https://github.com/bluz71/vim-nightfly-guicolors)
+- [svrana/neosolarized.nvim](https://github.com/svrana/neosolarized.nvim) - Neosolarized theme for Neovim
 
 #### Navigating Between Neovim Windows and Tmux
 
@@ -130,10 +131,6 @@ brew install ripgrep
 #### Indent Highlight
 
 - [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) - This plugin adds indentation guides to all lines.
-
-#### Neosolarized Theme
-
-- [svrana/neosolarized.nvim](https://github.com/svrana/neosolarized.nvim) - Neosolarized theme for Neovim
 
 # License
 

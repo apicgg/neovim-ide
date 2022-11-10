@@ -132,6 +132,10 @@ brew install ripgrep
 
 - [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) - This plugin adds indentation guides to all lines.
 
+### Discord Presence
+
+- [andweeb/presence.nvim](https://github.com/andweeb/presence.nvim) - This is to show your Neovim status inside Discord.
+
 # License
 
 MIT

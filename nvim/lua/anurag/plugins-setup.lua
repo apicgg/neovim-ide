@@ -125,6 +125,9 @@ return packer.startup(function(use)
 	-- vim fugative for git
 	-- use({ "tpope/vim-fugitive" })
 
+	-- Discord rich presence
+	use("andweeb/presence.nvim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

@@ -10,11 +10,12 @@ Check out 📹 Youtube video by [Josean Martinez](https://www.youtube.com/channe
 
 ### Requires
 
-- True Color Terminal Like (macOS) : [iTerm2](https://iterm2.com/)
-- True Color terminal Like (WSL) : [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-in&gl=in)
+- True Color Terminal Like (macOS) : [iTerm2](https://iterm2.com/) - Terminal for macOS.
+- True Color terminal Like (WSL) : [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-in&gl=in) - Terminal for WSL.
 - [Neovim](https://neovim.io/) (Version 0.8 or Later)
 - [Nerd Font](https://github.com/ryanoasis/nerd-fonts) - I use Hack Nerd Font.
-- [Ripgrep](https://github.com/BurntSushi/ripgrep) - For Telescope Fuzzy Finder
+- [Ripgrep](https://github.com/BurntSushi/ripgrep) - For Telescope Fuzzy Finder.
+- [Tree-sitter](https://tree-sitter.github.io/tree-sitter/) - Treesitter cli for tree-sitter plugin.
 
 If you're on mac, linux or WSL, you can install iTerm2 (macOS only), Neovim and Ripgrep with homebrew.
 

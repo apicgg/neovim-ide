@@ -2,7 +2,7 @@
 
 **IMPORTANT:** Don’t blindly use my settings unless you know what that entails. Proceed at your own risk!
 
-This repo is a fork of [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files) with some extra neovim plugins that I use.
+This repo is a fork of [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files) with some extra neovim plugins that I use. Most the of keybinds are same as the YouTube video. Kindly check the config file to see the changes.
 
 Check out 📹 Youtube video by [Josean Martinez](https://www.youtube.com/channel/UC_NZ6qLS9oJgsMKQhqAkg-w) Step-by-Step Guide: [How I Setup Neovim On My Mac To Make It Amazing](https://youtu.be/vdn_pKJUda8)
 
@@ -10,12 +10,13 @@ Check out 📹 Youtube video by [Josean Martinez](https://www.youtube.com/channe
 
 ### Requires
 
-- True Color Terminal Like: [iTerm2](https://iterm2.com/)
+- True Color Terminal Like (macOS) : [iTerm2](https://iterm2.com/)
+- True Color terminal Like (WSL) : [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-in&gl=in)
 - [Neovim](https://neovim.io/) (Version 0.8 or Later)
-- [Nerd Font](https://github.com/ryanoasis/nerd-fonts) - I use Hack Nerd Font. Recently I have been using JetBrainsMono Nerd Font.
+- [Nerd Font](https://github.com/ryanoasis/nerd-fonts) - I use Hack Nerd Font.
 - [Ripgrep](https://github.com/BurntSushi/ripgrep) - For Telescope Fuzzy Finder
 
-If you're on mac, like me, you can install iTerm2, Neovim and Ripgrep with homebrew.
+If you're on mac, linux or WSL, you can install iTerm2 (macOS only), Neovim and Ripgrep with homebrew.
 
 ```bash
 brew install --cask iterm2
@@ -29,10 +30,37 @@ brew install neovim
 brew install ripgrep
 ```
 
+```bash
+brew install tree-sitter
+```
+
 ### Relevant Files
 
 - Copy the nvim directory into your ~/.config.
-- [.config/nvim](.config/nvim)
+
+## Basic Setup
+
+#### The leader key is bind to "space".<br> Check `~/.config/nvim/lua/user/core/keymaps.lua`
+
+#### Some plugins might be disabled as they are commented.<br> Check `~/.config/nvim/init.lua`
+
+#### Install LSP
+
+Enter `:LspInstall` followed by the name of the server you want to install. Check [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) documentation.<br>
+Example: `:LspInstall javascript`<br>
+Or mason can be used to install lsp, dap etc.
+
+#### Install language parser
+
+Enter `:TSInstall` followed by the name of the language you want to install<br>
+Example: `:TSInstall typescript`
+
+#### Manage plugins
+
+Run `:PackerClean` to remove any disabled or unused plugins<br>
+Run `:PackerSync` to update and clean plugins<br>
+
+Also manually saving the `~/.config/nvim/lua/user/plugins-setup.lua` file updates the plugins to it's latest version.
 
 ## Plugins
 
@@ -44,9 +72,9 @@ brew install ripgrep
 
 - [nvim-lua/plenary](https://github.com/nvim-lua/plenary.nvim) - Useful lua functions other plugins use
 
-#### Preferred Colorscheme
+#### Preferred Colorscheme (use any one of the below)
 
-- [bluz71/vim-nightfly-guicolors](https://github.com/bluz71/vim-nightfly-guicolors)
+- [bluz71/vim-nightfly-guicolors](https://github.com/bluz71/vim-nightfly-guicolors) - Dark Colorscheme
 - [svrana/neosolarized.nvim](https://github.com/svrana/neosolarized.nvim) - Neosolarized theme for Neovim
 
 #### Navigating Between Neovim Windows and Tmux

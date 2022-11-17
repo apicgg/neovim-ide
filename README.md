@@ -1,8 +1,8 @@
-# My Neovim Setup
+# Neovim Setup
 
 **IMPORTANT:** Don’t blindly use my settings unless you know what that entails. Proceed at your own risk!
 
-This repo is a fork of [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files) with some extra neovim plugins that I use. Most the of keybinds are same as the YouTube video. Kindly check the config file to see the changes.
+This repo is a fork of [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files) with some extra neovim plugins and keybinds that I personally prefer. Most the of keybinds are same as the YouTube video. Kindly check the config file to see the changes.
 
 Check out 📹 Youtube video by [Josean Martinez](https://www.youtube.com/channel/UC_NZ6qLS9oJgsMKQhqAkg-w) Step-by-Step Guide: [How I Setup Neovim On My Mac To Make It Amazing](https://youtu.be/vdn_pKJUda8)
 
@@ -43,13 +43,21 @@ brew install tree-sitter
 
 #### The leader key is bind to "space".<br> Check `~/.config/nvim/lua/user/core/keymaps.lua`
 
-#### Some plugins might be disabled as they are commented.<br> Check `~/.config/nvim/init.lua`
+#### Some plugins might be disabled as they are commented.
+
+##### Uncomment the plugins and save the `~/.config/nvim/lua/user/plugins-setup.lua` to install via packer.<br>
+
+##### Check `~/.config/nvim/init.lua` <br>
+
+##### Also check `~/.config/nvim/lua/user/plugins-setup.lua`
 
 #### Install LSP
 
 Enter `:LspInstall` followed by the name of the server you want to install. Check [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) documentation.<br>
 Example: `:LspInstall javascript`<br>
-Or mason can be used to install lsp, dap etc.
+Or mason can be used to install lsp, dap etc. <br>
+Enter `:Mason` to install, update and delete lsp, dap etc. <br>
+For more check mason docs - [mason.nvim](https://github.com/williamboman/mason.nvim)
 
 #### Install language parser
 

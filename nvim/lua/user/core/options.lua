@@ -46,6 +46,7 @@ opt.iskeyword:append("-") -- consider string-string as whole word
 opt.winblend = 0
 opt.wildoptions = "pum"
 opt.pumblend = 5
+opt.title = true
 vim.scriptencoding = "utf-8"
 opt.encoding = "utf-8"
 opt.fileencoding = "utf-8"

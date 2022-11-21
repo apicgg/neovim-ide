@@ -2,22 +2,24 @@
 
 **IMPORTANT:** Don’t blindly use my settings unless you know what that entails. Proceed at your own risk!
 
-This repo is a fork of [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files) with some extra neovim plugins and keybinds that I personally prefer. Most the of keybinds are same as the YouTube video. Kindly check the config file to see the changes.
+This repo is a fork of [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files) with some extra neovim plugins and keybinds that I personally prefer. Most of the keybinds are same as the YouTube video. Kindly check the config file to see the changes.
 
-Check out 📹 Youtube video by [Josean Martinez](https://www.youtube.com/channel/UC_NZ6qLS9oJgsMKQhqAkg-w) Step-by-Step Guide: [How I Setup Neovim On My Mac To Make It Amazing](https://youtu.be/vdn_pKJUda8)
+Check out this amazing 📹 Youtube video by [Josean Martinez](https://www.youtube.com/channel/UC_NZ6qLS9oJgsMKQhqAkg-w) Step-by-Step Guide: [How I Setup Neovim On My Mac To Make It Amazing](https://youtu.be/vdn_pKJUda8)
 
 # Neovim Setup
 
 ### Requires
 
 - True Color Terminal Like (macOS) : [iTerm2](https://iterm2.com/) - Terminal for macOS.
+- True Color terminal Like (Linux) : [Alacritty Terminal](https://alacritty.org/) - Terminal for Linux written in Rust.
 - True Color terminal Like (WSL) : [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-in&gl=in) - Terminal for WSL.
 - [Neovim](https://neovim.io/) (Version 0.8 or Later)
-- [Nerd Font](https://github.com/ryanoasis/nerd-fonts) - I use Hack Nerd Font.
+- [Nerd Font](https://github.com/ryanoasis/nerd-fonts) - I use Hack Nerd Font. Check the link for more nerd fonts.
 - [Ripgrep](https://github.com/BurntSushi/ripgrep) - For Telescope Fuzzy Finder.
 - [Tree-sitter](https://tree-sitter.github.io/tree-sitter/) - Treesitter cli for tree-sitter plugin.
 
-If you're on mac, linux or WSL, you can install iTerm2 (macOS only), Neovim and Ripgrep with homebrew.
+If you're on mac, linux or WSL, you can install iTerm2 (**macOS only**), Neovim and Ripgrep with [homebrew](https://brew.sh/).
+Check out the [homebrew](https://brew.sh/) on how to install.
 
 ```bash
 brew install --cask iterm2
@@ -47,22 +49,21 @@ brew install tree-sitter
 
 ##### Uncomment the plugins and save the `~/.config/nvim/lua/user/plugins-setup.lua` to install via packer.<br>
 
-##### Check `~/.config/nvim/init.lua` <br>
-
-##### Also check `~/.config/nvim/lua/user/plugins-setup.lua`
+##### Check `~/.config/nvim/init.lua` for commented plugins. <br>
 
 #### Install LSP
 
 Enter `:LspInstall` followed by the name of the server you want to install. Check [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) documentation.<br>
 Example: `:LspInstall javascript`<br>
-Or mason can be used to install lsp, dap etc. <br>
+Or mason can be used to install lsp, dap etc. <br> **Mason has been configured in such a way that it will automatically install lsp servers from the lsp config file - `~/.config/nvim/lua/user/plugins/lsp/lspconfig.lua`** <br>
 Enter `:Mason` to install, update and delete lsp, dap etc. <br>
 For more check mason docs - [mason.nvim](https://github.com/williamboman/mason.nvim)
 
 #### Install language parser
 
 Enter `:TSInstall` followed by the name of the language you want to install<br>
-Example: `:TSInstall typescript`
+Example: `:TSInstall typescript` <br>
+Check the file `~/.config/nvim/lua/user/plugins/treesitter.lua` to install language parsers with `:TSUpdate`
 
 #### Manage plugins
 
@@ -93,7 +94,7 @@ Also manually saving the `~/.config/nvim/lua/user/plugins-setup.lua` file update
 #### Essentials
 
 - [tpope/vim-surround](https://github.com/tpope/vim-surround) - manipulate surroundings with "ys", "ds", and "cs"
-- [vim-scripts/ReplaceWithRegister](https://github.com/vim-scripts/ReplaceWithRegister) - replace things with register with "gr"
+- [inkarkat/vim-ReplaceWithRegister](https://github.com/inkarkat/vim-ReplaceWithRegister) - replace things with register with "gr"
 - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim) - toggle comments with "gc"
 
 #### File Explorer
@@ -102,7 +103,7 @@ Also manually saving the `~/.config/nvim/lua/user/plugins-setup.lua` file update
 
 #### VS Code Like Icons
 
-- [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
+- [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 
 #### Status Line
 
@@ -155,7 +156,7 @@ Also manually saving the `~/.config/nvim/lua/user/plugins-setup.lua` file update
 
 #### Colorizer
 
-- [norcalli/nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - A high-performance color highlighter for Neovim which has no external dependencies!
+- [NvChad/nvim-colorizer.lua](https://github.com/NvChad/nvim-colorizer.lua) - A high-performance color highlighter for Neovim which has no external dependencies!
 
 #### Markdown Preview
 

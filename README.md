@@ -6,7 +6,7 @@
 
 # Inspirations
 
-My inspirations for this project are [devaslife](https://www.youtube.com/watch?v=ajmK0ZNcM4Q) and [Josean Martinez](https://www.youtube.com/channel/UC_NZ6qLS9oJgsMKQhqAkg-w)
+My inspirations for this project are [devaslife](https://www.youtube.com/watch?v=ajmK0ZNcM4Q) and [Josean Martinez](https://www.youtube.com/watch?v=vdn_pKJUda8&t=3597s)
 
 # Neovim Setup
 

@@ -111,10 +111,25 @@ lspconfig["sumneko_lua"].setup({
 })
 
 -- clangd lsp
-require("lspconfig").clangd.setup({})
+lspconfig["clangd"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
 
 -- docker lsp
-require("lspconfig").dockerls.setup({})
+lspconfig["dockerls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
 
 -- astro javascript framework lsp
-require("lspconfig").astro.setup({})
+lspconfig["astro"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+-- rust lsp
+lspconfig["rust_analyzer"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})

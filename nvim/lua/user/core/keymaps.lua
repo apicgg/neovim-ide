@@ -17,7 +17,7 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 keymap.set("n", "x", '"_x')
 keymap.set("v", "x", '"_x')
 
--- delete word backwards without copying into register
+-- delete word backword without copying into register
 -- keymap.set("n", "dw", '"_dw')
 keymap.set("n", "dw", 'vb"_d')
 

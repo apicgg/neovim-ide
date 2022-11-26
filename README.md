@@ -4,9 +4,9 @@
 
 **IMPORTANT:** Don’t blindly use my settings unless you know what that entails. Proceed at your own risk!
 
-This repo is a fork of [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files) with some extra neovim plugins, theme and keybinds that I personally prefer. Most of the keybinds are same as the YouTube video. Kindly check the config file to see the changes.
+# Inspirations
 
-Check out this amazing 📹 Youtube video by [Josean Martinez](https://www.youtube.com/channel/UC_NZ6qLS9oJgsMKQhqAkg-w) Step-by-Step Guide: [How I Setup Neovim On My Mac To Make It Amazing](https://youtu.be/vdn_pKJUda8)
+My inspirations for this project are [devaslife](https://www.youtube.com/watch?v=ajmK0ZNcM4Q) and [Josean Martinez](https://www.youtube.com/channel/UC_NZ6qLS9oJgsMKQhqAkg-w)
 
 # Neovim Setup
 

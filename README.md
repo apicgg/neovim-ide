@@ -1,8 +1,10 @@
 # Neovim Setup
 
+![neovim screenshot](./images/screenshot-neovim.png)
+
 **IMPORTANT:** Don’t blindly use my settings unless you know what that entails. Proceed at your own risk!
 
-This repo is a fork of [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files) with some extra neovim plugins and keybinds that I personally prefer. Most of the keybinds are same as the YouTube video. Kindly check the config file to see the changes.
+This repo is a fork of [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files) with some extra neovim plugins, theme and keybinds that I personally prefer. Most of the keybinds are same as the YouTube video. Kindly check the config file to see the changes.
 
 Check out this amazing 📹 Youtube video by [Josean Martinez](https://www.youtube.com/channel/UC_NZ6qLS9oJgsMKQhqAkg-w) Step-by-Step Guide: [How I Setup Neovim On My Mac To Make It Amazing](https://youtu.be/vdn_pKJUda8)
 
@@ -41,9 +43,16 @@ brew install tree-sitter
 
 - Copy the nvim directory into your ~/.config.
 
+## Basic Keybinds
+
+- The leader prefix key is assigned to `space`.
+- To escape into normal mode use `esc` or `jj`.
+- Open Telescope file explorer - `<leader>e`.
+- Open nvim-tree file explorer - `<leader>b`.
+
 ## Basic Setup
 
-#### The leader key is bind to "space".<br> Check `~/.config/nvim/lua/user/core/keymaps.lua`
+#### The leader key is bind to `space`.<br> Check `~/.config/nvim/lua/user/core/keymaps.lua`
 
 #### Some plugins might be disabled as they are commented.
 
@@ -160,7 +169,15 @@ Also manually saving the `~/.config/nvim/lua/user/plugins-setup.lua` file update
 
 #### Markdown Preview
 
-- [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) - Preview markdown on your modern browser with synchronised scrolling and flexible configuration. Check out the instructions on GitHub page to set it up.
+- [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) - Preview markdown on your modern browser with synchronised scrolling and flexible configuration. Check out the instructions below or on GitHub page to set it up. <br>
+  After setup open a .md file and use `:MarkdownPreview` to see a live preview inside your default browser.
+
+```vim
+cd ~/.local/share/nvim/site/pack/packer/start/
+cd markdown-preview.nvim
+yarn install
+yarn build
+```
 
 #### Integrated Terminal
 
@@ -174,6 +191,14 @@ Also manually saving the `~/.config/nvim/lua/user/plugins-setup.lua` file update
 
 - [andweeb/presence.nvim](https://github.com/andweeb/presence.nvim) - This is to show your Neovim status inside Discord.
 
+# TODO
+
+- Configure debugger for JavaScript and TypeScript with DAP.
+
 # License
 
 MIT
+
+## Contributors
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

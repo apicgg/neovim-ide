@@ -1,46 +1,39 @@
-local status, ts = pcall(require, "nvim-treesitter.configs")
+-- import nvim-treesitter plugin safely
+local status, treesitter = pcall(require, "nvim-treesitter.configs")
 if not status then
   return
 end
 
-ts.setup({
+-- configure treesitter
+treesitter.setup({
+  -- enable syntax highlighting
   highlight = {
     enable = true,
-    disable = {},
   },
-  indent = {
-    enable = true,
-    disable = {},
-  },
+  -- enable indentation
+  indent = { enable = true },
+  -- enable autotagging (w/ nvim-ts-autotag plugin)
+  autotag = { enable = true },
+  -- ensure these language parsers are installed
   ensure_installed = {
-    "toml",
     "json",
-    "yaml",
-    "lua",
     "javascript",
     "typescript",
-    "c",
-    "cpp",
-    "rust",
     "tsx",
+    "yaml",
     "html",
     "css",
-    "astro",
     "markdown",
+    "markdown_inline",
     "graphql",
+    "prisma",
     "bash",
+    "lua",
     "vim",
     "dockerfile",
     "gitignore",
+    "gitcommit",
   },
-  autotag = {
-    enable = true,
-  },
-  context_commentstring = {
-    enable = true,
-    enable_autocmd = false,
-  },
+  -- auto install above language parsers
+  auto_install = true,
 })
-
-local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
-parser_config.tsx.filetype_to_parsername = { "javascript", "typescript.tsx" }

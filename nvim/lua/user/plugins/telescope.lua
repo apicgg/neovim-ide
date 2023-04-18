@@ -46,25 +46,26 @@ telescope.setup({
 
 telescope.load_extension("file_browser")
 
-vim.keymap.set("n", ";f", function()
+vim.keymap.set("n", "<leader>ff", function()
   builtin.find_files({
     no_ignore = false,
-    hidden = true,
+    -- hidden = true,
+    find_command = { "rg", "--files", "--iglob", "!.git", "--hidden" },
   })
 end)
-vim.keymap.set("n", ";r", function()
-  builtin.live_grep()
-end)
-vim.keymap.set("n", "\\\\", function()
-  builtin.buffers()
-end)
-vim.keymap.set("n", ";t", function()
-  builtin.help_tags()
-end)
-vim.keymap.set("n", ";;", function()
+-- vim.keymap.set("n", ";r", function()
+--   builtin.live_grep()
+-- end)
+-- vim.keymap.set("n", "\\\\", function()
+--   builtin.buffers()
+-- end)
+-- vim.keymap.set("n", ";t", function()
+--   builtin.help_tags()
+-- end)
+vim.keymap.set("n", "<leader>fr", function()
   builtin.resume()
 end)
-vim.keymap.set("n", ";e", function()
+vim.keymap.set("n", "<leader>fd", function()
   builtin.diagnostics()
 end)
 vim.keymap.set("n", "<leader>e", function()

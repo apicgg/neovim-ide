@@ -18,8 +18,7 @@ keymap.set("n", "x", '"_x')
 keymap.set("v", "x", '"_x')
 
 -- delete word backword without copying into register
--- keymap.set("n", "dw", '"_dw')
-keymap.set("n", "dw", 'vb"_d')
+keymap.set("n", "db", "vbd")
 
 -- delete line without copying into register
 -- keymap.set("n", "dd", '"_dd')
@@ -42,6 +41,21 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 -- keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 -- keymap.set("n", "<leader><Tab>", ":tabp<CR>") --  go to previous tab
 
+-- Split window
+keymap.set("n", "ss", ":split<Return><C-w>w")
+keymap.set("n", "sv", ":vsplit<Return><C-w>w")
+-- Move window
+keymap.set("", "sh", "<C-w>h")
+keymap.set("", "sk", "<C-w>k")
+keymap.set("", "sj", "<C-w>j")
+keymap.set("", "sl", "<C-w>l")
+
+-- Resize window
+keymap.set("n", "<C-w><left>", "<C-w><")
+keymap.set("n", "<C-w><right>", "<C-w>>")
+keymap.set("n", "<C-w><up>", "<C-w>+")
+keymap.set("n", "<C-w><down>", "<C-w>-")
+
 ----------------------
 -- Plugin Keybinds
 ----------------------
@@ -52,8 +66,8 @@ keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window max
 -- nvim-tree
 keymap.set("n", "<leader>b", ":NvimTreeToggle<CR>") -- toggle file explorer
 
--- telescope
-keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
+-- telescope (some of the Keybinds are defined inside telescope.lua)
+-- keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
 keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance

@@ -85,7 +85,15 @@ return packer.startup(function(use)
   -- configuring lsp servers
   use("neovim/nvim-lspconfig") -- easily configure language servers
   use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
-  use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp uis
+  -- use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp uis
+  use({
+    "glepnir/lspsaga.nvim",
+    branch = "main",
+    requires = {
+      { "nvim-tree/nvim-web-devicons" },
+      { "nvim-treesitter/nvim-treesitter" },
+    },
+  }) -- enhanced lsp uis
   use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
   use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
@@ -108,6 +116,7 @@ return packer.startup(function(use)
 
   -- git integration
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+  use("dinhhuy258/git.nvim") -- For git blame & browse
 
   -- colorizer
   -- use("norcalli/nvim-colorizer.lua") -- this is not being maintained, use the below one,
@@ -120,13 +129,16 @@ return packer.startup(function(use)
   -- use({ "lukas-reineke/indent-blankline.nvim" })
 
   -- integrated terminal
-  use({ "akinsho/toggleterm.nvim" })
+  -- use({ "akinsho/toggleterm.nvim" })
 
   -- bufferline
   use("akinsho/nvim-bufferline.lua")
 
   -- Discord rich presence
-  use("andweeb/presence.nvim")
+  -- use("andweeb/presence.nvim")
+
+  --Vim plugin for automatically highlighting other uses of the word under the cursor using either LSP, Tree-sitter, or regex matching.
+  use({ "RRethy/vim-illuminate" })
 
   if packer_bootstrap then
     require("packer").sync()
